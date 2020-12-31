@@ -1,0 +1,12 @@
+query = ("SELECT BloodGlucose.BG_id as id, BloodGlucose.BG_Value as value,BloodGlucose.BG_Time as time,'Blood Glucose' as title FROM `BloodGlucose` WHERE BloodGlucose.BG_Date = '2020-12-21' AND BloodGlucose.BG_user_id = {}
+UNION
+ SELECT Insulin.IN_id as id, Insulin.IN_Value as value,Insulin.IN_Time as time,'Insulin' as title FROM `Insulin` WHERE Insulin.IN_Date='2020-12-21' AND Insulin.IN_user_id = {}
+UNION
+ SELECT BodyWeight.BW_id as id, BodyWeight.BW_Value as value,BodyWeight.BW_Time as time,'Body Weight' as title FROM `BodyWeight` WHERE BodyWeight.BW_Date='2020-12-21' AND BodyWeight.BW_user_id = {}
+UNION
+SELECT Steps.ST_id as id, Steps.ST_Value as value,Steps.ST_Time as time,'Steps' as title FROM `Steps` WHERE Steps.ST_Date='2020-12-21' AND Steps.ST_user_id = {}
+   ORDER BY time DESC").format(user_id,user_id)
+
+
+
+   query = ("SELECT BloodGlucose.BG_id as id, BloodGlucose.BG_Value as value,BloodGlucose.BG_Time as time,'Blood Glucose' as title FROM `BloodGlucose` WHERE BloodGlucose.BG_Date = '2020-12-23' AND BloodGlucose.BG_user_id = {raw_user}  UNION SELECT Insulin.IN_id as id, Insulin.IN_Value as value,Insulin.IN_Time as time,'Insulin' as title FROM `Insulin` WHERE Insulin.IN_Date='2020-12-23' AND Insulin.IN_user_id = {raw_user} UNION SELECT BodyWeight.BW_id as id, BodyWeight.BW_Value as value,BodyWeight.BW_Time as time,'Body Weight' as title FROM `BodyWeight` WHERE BodyWeight.BW_Date='2020-12-23' AND BodyWeight.BW_user_id = {raw_user} UNION SELECT Steps.ST_id as id, Steps.ST_Value as value,Steps.ST_Time as time,'Steps' as title FROM `Steps` WHERE Steps.ST_Date={raw_date} AND Steps.ST_user_id = {raw_user} ORDER BY time DESC").format(raw_user=user_id,raw_date = today_date)

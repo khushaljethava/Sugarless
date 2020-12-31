@@ -1,0 +1,1644 @@
+
+  # HbA1c code
+      if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'HbA1c').first() == user_gender:
+          if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HbA1c' , ReferenceRangeModel.RR_gender== user_gender).first())):
+              pass
+          elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HbA1c' , ReferenceRangeModel.RR_gender== user_gender).first())):
+              pass
+          elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HbA1c' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HbA1c' , ReferenceRangeModel.RR_gender== user_gender).first())):
+              pass
+      else:
+          if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HbA1c' , ReferenceRangeModel.RR_gender== 'MF').first())):
+              pass
+          elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HbA1c' , ReferenceRangeModel.RR_gender== 'MF').first())):
+              pass
+          elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HbA1c' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HbA1c' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+              pass
+
+
+
+  # AVERAGE_BLOOD_GLUCOSE
+      if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'AVERAGE_BLOOD_GLUCOSE').first() == user_gender:
+          if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'AVERAGE_BLOOD_GLUCOSE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+              pass
+          elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'AVERAGE_BLOOD_GLUCOSE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+              pass
+          elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'AVERAGE_BLOOD_GLUCOSE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'AVERAGE_BLOOD_GLUCOSE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+              pass
+      else:
+          if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'AVERAGE_BLOOD_GLUCOSE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+              pass
+          elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'AVERAGE_BLOOD_GLUCOSE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+              pass
+          elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'AVERAGE_BLOOD_GLUCOSE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'AVERAGE_BLOOD_GLUCOSE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+              pass
+
+
+
+
+      # TOTAL_LEUCOCYTES_COUNT
+      if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_LEUCOCYTES_COUNT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_LEUCOCYTES_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_LEUCOCYTES_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_LEUCOCYTES_COUNT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_LEUCOCYTES_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+      else:
+
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_LEUCOCYTES_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_LEUCOCYTES_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_LEUCOCYTES_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_LEUCOCYTES_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+      # NEUTROPHILS
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+      # LYMPHOCYTE_PERCENTAGE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTE_PERCENTAGE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+              # MONOCYTES
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+               # EOSINOPHILS
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+                # BASOPHILS
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+  # IMMATURE_GRANULOCYTE_PERCENTAGE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTE_PERCENTAGE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTE_PERCENTAGE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # NEUTROPHILS_ABSOLUTE_COUNT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS_ABSOLUTE_COUNT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NEUTROPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # LYMPHOCYTES_ABSOLUTE_COUNT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTES_ABSOLUTE_COUNT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LYMPHOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+  # MONOCYTES_ABSOLUTE_COUNT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES_ABSOLUTE_COUNT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MONOCYTES_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # BASOPHILS_ABSOLUTE_COUNT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS_ABSOLUTE_COUNT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BASOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # EOSINOPHILS_ABSOLUTE_COUNT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS_ABSOLUTE_COUNT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EOSINOPHILS_ABSOLUTE_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # IMMATURE_GRANULOCYTES
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTES').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTES' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTES' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTES' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTES' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTES' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTES' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTES' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IMMATURE_GRANULOCYTES' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # TOTAL_RBC
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_RBC').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_RBC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_RBC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_RBC' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_RBC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_RBC' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_RBC' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_RBC' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_RBC' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # NUCLEATED_RED_BLOOD_CELLS
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'NUCLEATED_RED_BLOOD_CELLS').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NUCLEATED_RED_BLOOD_CELLS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NUCLEATED_RED_BLOOD_CELLS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NUCLEATED_RED_BLOOD_CELLS' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NUCLEATED_RED_BLOOD_CELLS' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NUCLEATED_RED_BLOOD_CELLS' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NUCLEATED_RED_BLOOD_CELLS' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NUCLEATED_RED_BLOOD_CELLS' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NUCLEATED_RED_BLOOD_CELLS' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # HEMOGLOBIN
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMOGLOBIN').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMOGLOBIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMOGLOBIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMOGLOBIN' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMOGLOBIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMOGLOBIN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMOGLOBIN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMOGLOBIN' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMOGLOBIN' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # HEMATOCRIT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMATOCRIT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMATOCRIT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMATOCRIT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMATOCRIT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMATOCRIT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMATOCRIT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMATOCRIT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMATOCRIT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HEMATOCRIT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # MEAN_CORPUSCULAR_VOLUME
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_VOLUME').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_VOLUME' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_VOLUME' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_VOLUME' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_VOLUME' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_VOLUME' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_VOLUME' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_VOLUME' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_VOLUME' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # MEAN_CORPUSCULAR_HEMOGLOBIN
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_HEMOGLOBIN').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_HEMOGLOBIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_HEMOGLOBIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_HEMOGLOBIN' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_HEMOGLOBIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_HEMOGLOBIN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_HEMOGLOBIN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_HEMOGLOBIN' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORPUSCULAR_HEMOGLOBIN' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # MEAN_CORP_HEMO_CONC
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORP_HEMO_CONC').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORP_HEMO_CONC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORP_HEMO_CONC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORP_HEMO_CONC' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORP_HEMO_CONC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORP_HEMO_CONC' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORP_HEMO_CONC' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORP_HEMO_CONC' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_CORP_HEMO_CONC' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # RED_CELL_DISTRIBUTION_WIDTH_SD
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_SD').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_SD' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_SD' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_SD' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_SD' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_SD' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_SD' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_SD' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_SD' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # RED_CELL_DISTRIBUTION_WIDTH_CV
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_CV').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_CV' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_CV' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_CV' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_CV' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_CV' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_CV' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_CV' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'RED_CELL_DISTRIBUTION_WIDTH_CV' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+  # PLATELET_DISTRIBUTION_WIDTH
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_DISTRIBUTION_WIDTH').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_DISTRIBUTION_WIDTH' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_DISTRIBUTION_WIDTH' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_DISTRIBUTION_WIDTH' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_DISTRIBUTION_WIDTH' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_DISTRIBUTION_WIDTH' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_DISTRIBUTION_WIDTH' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_DISTRIBUTION_WIDTH' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_DISTRIBUTION_WIDTH' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # MEAN_PLATELET_VOLUME
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_PLATELET_VOLUME').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_PLATELET_VOLUME' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_PLATELET_VOLUME' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_PLATELET_VOLUME' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_PLATELET_VOLUME' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_PLATELET_VOLUME' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_PLATELET_VOLUME' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_PLATELET_VOLUME' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MEAN_PLATELET_VOLUME' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # PLATELET_COUNT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_COUNT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_COUNT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_COUNT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_COUNT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_COUNT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # PLATELET_TO_LARGE_CELL_RATIO
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_TO_LARGE_CELL_RATIO').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_TO_LARGE_CELL_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_TO_LARGE_CELL_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_TO_LARGE_CELL_RATIO' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_TO_LARGE_CELL_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_TO_LARGE_CELL_RATIO' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_TO_LARGE_CELL_RATIO' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_TO_LARGE_CELL_RATIO' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELET_TO_LARGE_CELL_RATIO' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # PLATELETCRIT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELETCRIT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELETCRIT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELETCRIT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELETCRIT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELETCRIT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELETCRIT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELETCRIT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELETCRIT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PLATELETCRIT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # ARSENIC
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'ARSENIC').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ARSENIC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ARSENIC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ARSENIC' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ARSENIC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ARSENIC' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ARSENIC' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ARSENIC' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ARSENIC' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # CADMIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'CADMIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CADMIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CADMIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CADMIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CADMIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CADMIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CADMIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CADMIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CADMIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # MERCURY
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'MERCURY').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MERCURY' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MERCURY' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MERCURY' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MERCURY' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MERCURY' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MERCURY' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MERCURY' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MERCURY' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # LEAD
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'LEAD').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LEAD' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LEAD' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LEAD' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LEAD' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LEAD' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LEAD' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LEAD' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LEAD' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # CHROMIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'CHROMIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CHROMIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CHROMIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CHROMIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CHROMIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CHROMIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CHROMIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CHROMIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CHROMIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # BARIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'BARIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BARIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BARIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BARIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BARIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BARIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BARIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BARIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BARIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # COBALT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'COBALT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'COBALT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'COBALT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'COBALT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'COBALT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'COBALT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'COBALT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'COBALT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'COBALT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # CAESIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'CAESIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CAESIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CAESIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CAESIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CAESIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CAESIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CAESIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CAESIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CAESIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # THALLIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'THALLIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'THALLIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'THALLIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'THALLIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'THALLIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'THALLIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'THALLIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'THALLIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'THALLIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # URANIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'URANIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'URANIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'URANIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'URANIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'URANIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'URANIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'URANIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'URANIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'URANIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # STRONTIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'STRONTIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'STRONTIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'STRONTIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'STRONTIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'STRONTIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'STRONTIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'STRONTIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'STRONTIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'STRONTIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # ANTIMONY
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'ANTIMONY').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ANTIMONY' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ANTIMONY' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ANTIMONY' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ANTIMONY' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ANTIMONY' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ANTIMONY' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ANTIMONY' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ANTIMONY' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+
+  # TIN
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'TIN').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TIN' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TIN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TIN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TIN' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TIN' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # MOLYBDENUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'MOLYBDENUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MOLYBDENUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MOLYBDENUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MOLYBDENUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MOLYBDENUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MOLYBDENUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MOLYBDENUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MOLYBDENUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MOLYBDENUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # SILVER
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'SILVER').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SILVER' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SILVER' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SILVER' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SILVER' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SILVER' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SILVER' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SILVER' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SILVER' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # VANADIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'VANADIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VANADIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VANADIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VANADIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VANADIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VANADIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VANADIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VANADIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VANADIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # BERYLLIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'BERYLLIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BERYLLIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BERYLLIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BERYLLIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BERYLLIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BERYLLIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BERYLLIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BERYLLIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BERYLLIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # BISMUTH
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'BISMUTH').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BISMUTH' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BISMUTH' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BISMUTH' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BISMUTH' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BISMUTH' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BISMUTH' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BISMUTH' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BISMUTH' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # SELENIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'SELENIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SELENIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SELENIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SELENIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SELENIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SELENIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SELENIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SELENIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SELENIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # ALUMINIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'ALUMINIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALUMINIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALUMINIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALUMINIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALUMINIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALUMINIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALUMINIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALUMINIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALUMINIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # NICKEL
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'NICKEL').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NICKEL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NICKEL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NICKEL' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NICKEL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NICKEL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NICKEL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NICKEL' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NICKEL' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # MANGANESE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'MANGANESE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MANGANESE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MANGANESE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MANGANESE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MANGANESE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MANGANESE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MANGANESE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'MANGANESE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'MANGANESE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # HOMOCYSTEINE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'HOMOCYSTEINE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HOMOCYSTEINE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HOMOCYSTEINE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HOMOCYSTEINE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HOMOCYSTEINE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HOMOCYSTEINE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HOMOCYSTEINE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HOMOCYSTEINE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HOMOCYSTEINE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # CYSTATIN_C
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'CYSTATIN_C').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CYSTATIN_C' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CYSTATIN_C' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CYSTATIN_C' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CYSTATIN_C' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CYSTATIN_C' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CYSTATIN_C' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CYSTATIN_C' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CYSTATIN_C' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # LIPOPROTEIN
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'LIPOPROTEIN').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LIPOPROTEIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LIPOPROTEIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LIPOPROTEIN' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LIPOPROTEIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LIPOPROTEIN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LIPOPROTEIN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LIPOPROTEIN' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LIPOPROTEIN' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # VITAMIN_B
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'VITAMIN_B').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VITAMIN_B' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VITAMIN_B' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VITAMIN_B' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VITAMIN_B' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VITAMIN_B' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VITAMIN_B' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VITAMIN_B' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VITAMIN_B' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # APOLIPOPROTEIN_A_APOA
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_A_APOA').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_A_APOA' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_A_APOA' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_A_APOA' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_A_APOA' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_A_APOA' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_A_APOA' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_A_APOA' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_A_APOA' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+
+  # APOLIPOPROTEIN_B_APOB
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_B_APOB').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_B_APOB' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_B_APOB' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_B_APOB' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_B_APOB' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_B_APOB' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_B_APOB' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_B_APOB' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOLIPOPROTEIN_B_APOB' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # APOB_APOA_RATIO
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'APOB_APOA_RATIO').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOB_APOA_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOB_APOA_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOB_APOA_RATIO' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOB_APOA_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOB_APOA_RATIO' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOB_APOA_RATIO' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'APOB_APOA_RATIO' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'APOB_APOA_RATIO' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # HSCRP
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'HSCRP').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HSCRP' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HSCRP' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HSCRP' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HSCRP' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HSCRP' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HSCRP' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HSCRP' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HSCRP' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # SERUM_COPPER
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_COPPER').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_COPPER' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_COPPER' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_COPPER' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_COPPER' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_COPPER' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_COPPER' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_COPPER' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_COPPER' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # SERUM_ZINC
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ZINC').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ZINC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ZINC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ZINC' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ZINC' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ZINC' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ZINC' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ZINC' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ZINC' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # TESTOSTERONE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'TESTOSTERONE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TESTOSTERONE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TESTOSTERONE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TESTOSTERONE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TESTOSTERONE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TESTOSTERONE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TESTOSTERONE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TESTOSTERONE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TESTOSTERONE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # IRON
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'IRON').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IRON' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IRON' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IRON' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IRON' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IRON' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IRON' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'IRON' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'IRON' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # TOTAL_IRON_BINDING_CAPACITY
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_IRON_BINDING_CAPACITY').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_IRON_BINDING_CAPACITY' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_IRON_BINDING_CAPACITY' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_IRON_BINDING_CAPACITY' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_IRON_BINDING_CAPACITY' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_IRON_BINDING_CAPACITY' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_IRON_BINDING_CAPACITY' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_IRON_BINDING_CAPACITY' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_IRON_BINDING_CAPACITY' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # TRANSFERRIN_SATURATION
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'TRANSFERRIN_SATURATION').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TRANSFERRIN_SATURATION' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TRANSFERRIN_SATURATION' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TRANSFERRIN_SATURATION' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TRANSFERRIN_SATURATION' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TRANSFERRIN_SATURATION' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TRANSFERRIN_SATURATION' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TRANSFERRIN_SATURATION' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TRANSFERRIN_SATURATION' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # ALKALINE_PHOSPHATASE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'ALKALINE_PHOSPHATASE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALKALINE_PHOSPHATASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALKALINE_PHOSPHATASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALKALINE_PHOSPHATASE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALKALINE_PHOSPHATASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALKALINE_PHOSPHATASE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALKALINE_PHOSPHATASE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALKALINE_PHOSPHATASE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALKALINE_PHOSPHATASE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # BILIRUBIN_TOTAL
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_TOTAL').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_TOTAL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_TOTAL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_TOTAL' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_TOTAL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_TOTAL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_TOTAL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_TOTAL' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_TOTAL' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # BILIRUBIN_DIRECT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_DIRECT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_DIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_DIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_DIRECT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_DIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_DIRECT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_DIRECT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_DIRECT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_DIRECT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # BILIRUBIN_INDIRECT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_INDIRECT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_INDIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_INDIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_INDIRECT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_INDIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_INDIRECT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_INDIRECT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_INDIRECT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BILIRUBIN_INDIRECT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # GAMMA_GLUTAMYL_TRANSFERASE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'GAMMA_GLUTAMYL_TRANSFERASE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'GAMMA_GLUTAMYL_TRANSFERASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'GAMMA_GLUTAMYL_TRANSFERASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'GAMMA_GLUTAMYL_TRANSFERASE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'GAMMA_GLUTAMYL_TRANSFERASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'GAMMA_GLUTAMYL_TRANSFERASE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'GAMMA_GLUTAMYL_TRANSFERASE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'GAMMA_GLUTAMYL_TRANSFERASE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'GAMMA_GLUTAMYL_TRANSFERASE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # ASPARTATE_AMINOTRANSFERASE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'ASPARTATE_AMINOTRANSFERASE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ASPARTATE_AMINOTRANSFERASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ASPARTATE_AMINOTRANSFERASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ASPARTATE_AMINOTRANSFERASE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ASPARTATE_AMINOTRANSFERASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ASPARTATE_AMINOTRANSFERASE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ASPARTATE_AMINOTRANSFERASE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ASPARTATE_AMINOTRANSFERASE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ASPARTATE_AMINOTRANSFERASE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # ALANINE_TRANSAMINASE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'ALANINE_TRANSAMINASE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALANINE_TRANSAMINASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALANINE_TRANSAMINASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALANINE_TRANSAMINASE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALANINE_TRANSAMINASE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALANINE_TRANSAMINASE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALANINE_TRANSAMINASE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALANINE_TRANSAMINASE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALANINE_TRANSAMINASE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # PROTEIN_TOTAL
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'PROTEIN_TOTAL').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PROTEIN_TOTAL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PROTEIN_TOTAL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PROTEIN_TOTAL' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PROTEIN_TOTAL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PROTEIN_TOTAL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PROTEIN_TOTAL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'PROTEIN_TOTAL' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'PROTEIN_TOTAL' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # ALBUMIN_SERUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'ALBUMIN_SERUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALBUMIN_SERUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALBUMIN_SERUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALBUMIN_SERUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALBUMIN_SERUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALBUMIN_SERUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALBUMIN_SERUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'ALBUMIN_SERUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'ALBUMIN_SERUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # SERUM_ALB
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ALB').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ALB' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ALB' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ALB' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ALB' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ALB' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ALB' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ALB' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_ALB' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # SERUM_GLOBULIN
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_GLOBULIN').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_GLOBULIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_GLOBULIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_GLOBULIN' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_GLOBULIN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_GLOBULIN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_GLOBULIN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_GLOBULIN' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'SERUM_GLOBULIN' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # TOTAL_CHOLESTEROL
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_CHOLESTEROL').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+  # HDL_CHOLESTEROL_DIRECT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'HDL_CHOLESTEROL_DIRECT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'HDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'HDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # LDL_CHOLESTEROL_DIRECT
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_CHOLESTEROL_DIRECT').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_CHOLESTEROL_DIRECT' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # TRIGLYCERIDES
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'TRIGLYCERIDES').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TRIGLYCERIDES' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TRIGLYCERIDES' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TRIGLYCERIDES' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TRIGLYCERIDES' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TRIGLYCERIDES' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TRIGLYCERIDES' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TRIGLYCERIDES' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TRIGLYCERIDES' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # TC_HDL_CHOLESTEROL_RATIO
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'TC_HDL_CHOLESTEROL_RATIO').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TC_HDL_CHOLESTEROL_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TC_HDL_CHOLESTEROL_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TC_HDL_CHOLESTEROL_RATIO' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TC_HDL_CHOLESTEROL_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TC_HDL_CHOLESTEROL_RATIO' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TC_HDL_CHOLESTEROL_RATIO' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TC_HDL_CHOLESTEROL_RATIO' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TC_HDL_CHOLESTEROL_RATIO' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # LDL_HDL_RATIO
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_HDL_RATIO').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_HDL_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_HDL_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_HDL_RATIO' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_HDL_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_HDL_RATIO' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_HDL_RATIO' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_HDL_RATIO' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'LDL_HDL_RATIO' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+
+  # VLDL_CHOLESTEROL
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'VLDL_CHOLESTEROL').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VLDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VLDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VLDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VLDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VLDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VLDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'VLDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'VLDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # NON_HDL_CHOLESTEROL
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'NON_HDL_CHOLESTEROL').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NON_HDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NON_HDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NON_HDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NON_HDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NON_HDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NON_HDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'NON_HDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'NON_HDL_CHOLESTEROL' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # TOTAL_TRIIODOTHYRONINE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_TRIIODOTHYRONINE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_TRIIODOTHYRONINE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_TRIIODOTHYRONINE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_TRIIODOTHYRONINE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_TRIIODOTHYRONINE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_TRIIODOTHYRONINE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_TRIIODOTHYRONINE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_TRIIODOTHYRONINE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_TRIIODOTHYRONINE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # TOTAL_THYROXINE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_THYROXINE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_THYROXINE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_THYROXINE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_THYROXINE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_THYROXINE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_THYROXINE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_THYROXINE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_THYROXINE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'TOTAL_THYROXINE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # THYROID_STIMULATING_HORMONE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'THYROID_STIMULATING_HORMONE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'THYROID_STIMULATING_HORMONE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'THYROID_STIMULATING_HORMONE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'THYROID_STIMULATING_HORMONE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'THYROID_STIMULATING_HORMONE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'THYROID_STIMULATING_HORMONE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'THYROID_STIMULATING_HORMONE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'THYROID_STIMULATING_HORMONE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'THYROID_STIMULATING_HORMONE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+  # BLOOD_UREA_NITROGEN
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'BLOOD_UREA_NITROGEN').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BLOOD_UREA_NITROGEN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BLOOD_UREA_NITROGEN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BLOOD_UREA_NITROGEN' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BLOOD_UREA_NITROGEN' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BLOOD_UREA_NITROGEN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BLOOD_UREA_NITROGEN' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BLOOD_UREA_NITROGEN' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BLOOD_UREA_NITROGEN' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # CREATININE_SERUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'CREATININE_SERUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CREATININE_SERUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CREATININE_SERUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CREATININE_SERUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CREATININE_SERUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CREATININE_SERUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CREATININE_SERUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CREATININE_SERUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CREATININE_SERUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # BUN_SR_CREATININE_RATIO
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'BUN_SR_CREATININE_RATIO').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BUN_SR_CREATININE_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BUN_SR_CREATININE_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BUN_SR_CREATININE_RATIO' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BUN_SR_CREATININE_RATIO' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BUN_SR_CREATININE_RATIO' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BUN_SR_CREATININE_RATIO' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'BUN_SR_CREATININE_RATIO' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'BUN_SR_CREATININE_RATIO' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # CALCIUM
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'CALCIUM').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CALCIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CALCIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CALCIUM' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CALCIUM' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CALCIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CALCIUM' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'CALCIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'CALCIUM' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # URIC_ACID
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'URIC_ACID').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'URIC_ACID' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'URIC_ACID' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'URIC_ACID' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'URIC_ACID' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'URIC_ACID' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'URIC_ACID' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'URIC_ACID' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'URIC_ACID' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass
+
+
+
+  # EST_GLOMERULAR_FILTRATION_RATE
+        if db.session.query(ReferenceRangeModel.RR_gender).filter(ReferenceRangeModel.RR_Lab_Test == 'EST_GLOMERULAR_FILTRATION_RATE').first() == user_gender:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EST_GLOMERULAR_FILTRATION_RATE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EST_GLOMERULAR_FILTRATION_RATE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EST_GLOMERULAR_FILTRATION_RATE' , ReferenceRangeModel.RR_gender== user_gender ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EST_GLOMERULAR_FILTRATION_RATE' , ReferenceRangeModel.RR_gender== user_gender).first())):
+                pass
+        else:
+            if LR_HPLC >= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EST_GLOMERULAR_FILTRATION_RATE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EST_GLOMERULAR_FILTRATION_RATE' , ReferenceRangeModel.RR_gender== 'MF').first())):
+                pass
+            elif float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_Low).filter(ReferenceRangeModel.RR_Lab_Test == 'EST_GLOMERULAR_FILTRATION_RATE' , ReferenceRangeModel.RR_gender== 'MF' ).first())) <= LR_HPLC <= float(pd.to_numeric(db.session.query(ReferenceRangeModel.RR_Range_High).filter(ReferenceRangeModel.RR_Lab_Test == 'EST_GLOMERULAR_FILTRATION_RATE' , ReferenceRangeModel.RR_gender== 'MF' ).first())):
+                pass

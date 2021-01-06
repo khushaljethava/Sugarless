@@ -44,7 +44,7 @@ class UserRegistration(Resource):
 
         new_user = UserModel(
         u_username=data['u_username'],
-        u_password=data['u_password'],
+        u_password=UserModel.generate_hash(data['u_password']),
         u_fullname=data['u_fullname'],
         u_email=data['u_email'],
         u_mobile=data['u_mobile'],
@@ -83,7 +83,7 @@ class UserLogin(Resource):
             }
 
         if UserModel.find_by_mobile(data['u_mobile']):
-            if  (data['u_password'],current_user.u_password):
+            if  UserModel.verify_hash(data['u_password'],current_user.u_password):
                 user =  UserModel.find_by_mobile(data['u_mobile'])
                 access_token = create_access_token(identity = data['u_mobile'])
                 user_dict = dict(user.json())
@@ -103,7 +103,9 @@ class UserLogin(Resource):
                 }
             else:
                 return {'Status': 'Error ',
-                "Response" : "Something went wrong"},500
+                "Response" : {
+                "Message" :"Your password is incorrect",
+                }},500
 
 
 class UserLogoutAccess(Resource):

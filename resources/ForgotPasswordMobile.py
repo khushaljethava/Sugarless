@@ -18,7 +18,7 @@ class ForgotPasswordMobile(Resource):
             user = dict(user.json())
             url = "https://www.fast2sms.com/dev/bulk"
 
-            otp = random.SystemRandom().randint(100000,999999)
+            otp = random.SystemRandom().randint(10000,99999)
             querystring = {"authorization":"PXX0LAHOO7bYpM0tZdGYPaoLWHSXcPdLbOIIeTVezz7X9JaQmX4uIz6BpVtc","sender_id":"FSTSMS","language":"english","route":"qt","numbers":"9662737937","message":"41820","variables":"{AA}|{CC}","variables_values":"5464|asdaswdx"}
             querystring["numbers"] = u_mobile
             querystring["variables_values"] = str(otp)+"|asdaswdx"

@@ -10,11 +10,19 @@ class OTPModel(db.Model):
 
 
 
+    def json(self):
+        return{
+        'u_id' : self.u_id,
+        'u_mobile' : self.u_mobile,
+        'otp' : self.otp
+        }
+
+
+
 
     @classmethod
     def find_by_mobile(cls, u_mobile):
         return cls.query.filter_by(u_mobile=u_mobile).first()
-
 
 
     def save_to_db(self):

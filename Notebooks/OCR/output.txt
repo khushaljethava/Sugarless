@@ -1,0 +1,345 @@
+PROCESSED AT :
+Thyrocare
+D-37/1,TTC MIDC,Turbhe,
+Navi Mumbai-400 703
+NAME               : MR SRIKANTH (38Y/M)                                           SAMPLE COLLECTED AT :
+                                                                                   (5311169953),PRABHU CLINICAL
+REF. BY            : SELF
+                                                                                   LABORATORY,DR.YEKKALA RAMAKRISHNA
+TEST ASKED         : HBA,HEMOGRAM - 6 PART (DIFF)                                  HOSPITAL RAMARAOPETA NARSIPATNAM
+                                                                                   531116,531116
+TEST NAME                                                   TECHNOLOGY                    VALUE        UNITS
+HbA1c - (HPLC - NGSP Certified)
+                                                            H.P.L.C                       8.3           %
+Reference Range :
+Reference Range: As per ADA Guidelines                                    Guidance For Known Diabetics
+ Below 5.7% : Normal                                                      Below 6.5% : Good Control
+ 5.7% - 6.4% : Prediabetic                                                6.5% - 7% : Fair Control
+ >=6.5%          : Diabetic                                               7.0% - 8% : Unsatisfactory Control
+                                                                          >8%         : Poor Control
+Method :  Fully Automated H.P.L.C. using Biorad Variant II Turbo, NGSP Certified.
+AVERAGE BLOOD GLUCOSE (ABG)                                 CALCULATED                    192           mg/dl
+Reference Range :
+ 90 - 120 mg/dl : Good Control
+ 121 - 150 mg/dl : Fair Control
+ 151 - 180 mg/dl : Unsatisfactory Control
+ > 180 mg/dl        : Poor Control
+Method :  Derived from HBA1c values
+Please correlate with clinical conditions.
+Sample Collected on (SCT)                 :26 Aug 2019 18:00
+Sample Received on (SRT)                 : 27 Aug 2019 22:50
+Report Released on (RRT)                 : 28 Aug 2019 08:25
+Sample Type                              : EDTA
+                                                                        Dr.Prachi Sinkar MD(Path)    Dr.Caesar Sengupta MD(Micro)
+Labcode                                  : 2708040370/A6750
+                                                                                                          Page : 1 of 9
+Barcode                                  : M9261080
+
+
+ PROCESSED AT :
+ Thyrocare
+ D-37/1,TTC MIDC,Turbhe,
+ Navi Mumbai-400 703
+ NAME              :   MR SRIKANTH (38Y/M)                                        SAMPLE COLLECTED AT :
+                                                                                  (5311169953),PRABHU CLINICAL
+ REF. BY           :   SELF
+                                                                                  LABORATORY,DR.YEKKALA RAMAKRISHNA
+ TEST ASKED        : HBA,HEMOGRAM - 6 PART (DIFF)                                 HOSPITAL RAMARAOPETA NARSIPATNAM
+                                                                                  531116,531116
+ TEST NAME                                                      VALUE              UNITS        REFERENCE RANGE
+ TOTAL LEUCOCYTES COUNT                                          6.4               X 10³ / µL   4.0-10.0
+ NEUTROPHILS                                                     49.7              %            40-80
+ LYMPHOCYTE PERCENTAGE                                           42.8              %            20-40
+ MONOCYTES                                                       2.3               %            0-10
+ EOSINOPHILS                                                     4.7               %            0.0-6.0
+ BASOPHILS                                                       0.2               %            <2
+ IMMATURE GRANULOCYTE PERCENTAGE(IG%)                            0.3               %            0-0.5
+ NEUTROPHILS - ABSOLUTE COUNT                                    3.18              X 10³ / µL   2.0-7.0
+ LYMPHOCYTES - ABSOLUTE COUNT                                    2.74              X 10³ / µL   1.0-3.0
+ MONOCYTES - ABSOLUTE COUNT                                      0.15              X 10³ / µL   0.2-1
+ BASOPHILS - ABSOLUTE COUNT                                      0.01              X 10³ / µL   0-0.1
+ EOSINOPHILS - ABSOLUTE COUNT                                    0.3               X 10³ / µL   0-0.5
+ IMMATURE GRANULOCYTES(IG)                                       0.02              X 10³ / µL   0-0.3
+ TOTAL RBC                                                       6.13              X 10^6/µL    4.5-5.5
+ NUCLEATED RED BLOOD CELLS                                      Nil                X 10³ / µL   <0.01
+ NUCLEATED RED BLOOD CELLS %                                    Nil                %            <0.01
+ HEMOGLOBIN                                                      18.1              g/dL         13-17
+ HEMATOCRIT(PCV)                                                 50.68             %            40-50
+ MEAN CORPUSCULAR VOLUME(MCV)                                    100.2             fL           83-101
+ MEAN CORPUSCULAR HEMOGLOBIN(MCH)                                29.5              pq           27-32
+ MEAN CORP.HEMO.CONC(MCHC)                                       29.5              g/dL         31.5-34.5
+ RED CELL DISTRIBUTION WIDTH - SD(RDW-SD)                        62.9              fL           39-46
+ RED CELL DISTRIBUTION WIDTH (RDW-CV)                            17.6              %            11.6-14
+ PLATELET DISTRIBUTION WIDTH(PDW)                                11.1              fL           9.6-15.2
+ MEAN PLATELET VOLUME(MPV)                                       9.4               fL           6.5-12
+ PLATELET COUNT                                                  222               X 10³ / µL   150-400
+ PLATELET TO LARGE CELL RATIO(PLCR)                              20.5              %            19.7-42.4
+ PLATELETCRIT(PCT)                                               0.21              %            0.19-0.39
+Remarks :    ALERT !!! Anisocytosis
+ Please Correlate with clinical conditions.
+ Method : Fully automated bidirectional analyser (6 Part Differential SYSMEX XN-1000)
+ (This device performs hematology analyses according to the Hydrodynamic Focussing (DC method), Flow
+ Cytometry Method (using a semiconductor laser), and SLS- hemoglobin method)
+ Sample Collected on (SCT)                  : 26 Aug 2019 18:00
+ Sample Received on (SRT)                   : 27 Aug 2019 22:50
+ Report Released on (RRT)                   : 28 Aug 2019 08:25
+ Sample Type                               : EDTA
+                                                                       Dr.Prachi Sinkar MD(Path)      Dr.Caesar Sengupta MD(Micro)
+ Labcode                                   : 2708040370/A6750
+                                                                                                          Page : 2 of 9
+ Barcode                                   : M9261080
+
+
+PROCESSED AT :
+Thyrocare
+D-37/1,TTC MIDC,Turbhe,
+Navi Mumbai-400 703
+NAME             : MR SRIKANTH (38Y/M)                                SAMPLE COLLECTED AT :
+                                                                      (5311169953),PRABHU CLINICAL
+REF. BY          : SELF
+                                                                      LABORATORY,DR.YEKKALA RAMAKRISHNA
+TEST ASKED       : AAROGYAM B                                         HOSPITAL RAMARAOPETA NARSIPATNAM
+                                                                      531116,531116
+TEST NAME                                          TECHNOLOGY                VALUE        UNITS
+IRON                                               PHOTOMETRY                69.1          µg/dl
+Reference Range :
+Male : 65 - 175
+Female : 50 - 170
+Method :  FERROZINE METHOD WITHOUT DEPROTEINIZATION
+TOTAL IRON BINDING CAPACITY (TIBC)                 PHOTOMETRY                348           µg/dl
+Reference Range :
+Male: 225 - 535 µg/dl Female: 215 - 535 µg/dl
+Method :  SPECTROPHOTOMETRIC ASSAY
+% TRANSFERRIN SATURATION                           CALCULATED                19.86         %
+Reference Range :
+13 - 45
+Method :  DERIVED FROM IRON AND TIBC VALUES
+Please correlate with clinical conditions.
+Sample Collected on (SCT)             :26 Aug 2019 18:00
+Sample Received on (SRT)             : 27 Aug 2019 22:53
+Report Released on (RRT)             : 28 Aug 2019 02:10
+Sample Type                          : SERUM
+                                                           Dr.Prachi Sinkar MD(Path)    Dr.Caesar Sengupta MD(Micro)
+Labcode                              : 2708040550/A6750
+                                                                                             Page : 3 of 9
+Barcode                              : N7212022
+
+
+PROCESSED AT :
+Thyrocare
+D-37/1,TTC MIDC,Turbhe,
+Navi Mumbai-400 703
+NAME             : MR SRIKANTH (38Y/M)                            SAMPLE COLLECTED AT :
+REF. BY          : SELF                                           (5311169953),PRABHU CLINICAL
+                                                                  LABORATORY,DR.YEKKALA RAMAKRISHNA HOSPITAL
+TEST ASKED       : AAROGYAM B                                     RAMARAOPETA NARSIPATNAM 531116,531116
+ TEST NAME                                        TECHNOLOGY             VALUE         UNITS      NORMAL RANGE
+ ALKALINE PHOSPHATASE                             PHOTOMETRY            64.5          U/L         45 - 129
+ BILIRUBIN - TOTAL                                PHOTOMETRY            0.35          mg/dl       0.3-1.2
+ BILIRUBIN -DIRECT                                PHOTOMETRY            0.08          mg/dl       < 0.3
+ BILIRUBIN (INDIRECT)                             CALCULATED            0.27          mg/dl       0-0.9
+ GAMMA GLUTAMYL TRANSFERASE (GGT)                 PHOTOMETRY            91.1          U/l         < 55
+ ASPARTATE AMINOTRANSFERASE (SGOT )               PHOTOMETRY            22.5          U/l         < 35
+ ALANINE TRANSAMINASE (SGPT)                      PHOTOMETRY            21.4          U/l         < 45
+ PROTEIN - TOTAL                                  PHOTOMETRY            6.6           gm/dl       5.7-8.2
+ ALBUMIN - SERUM                                  PHOTOMETRY            4.1           gm/dl       3.2-4.8
+ SERUM ALB/GLOBULIN RATIO                         CALCULATED            1.64          Ratio       0.9 - 2
+ SERUM GLOBULIN                                   PHOTOMETRY            2.5           gm/dL       2.5-3.4
+ Please correlate with clinical conditions.
+ Method :
+ ALKP - MODIFIED IFCC METHOD
+ BILT - VANADATE OXIDATION
+ BILD - VANADATE OXIDATION
+ BILI - DERIVED FROM SERUM TOTAL AND DIRECT BILIRUBIN VALUES
+ GGT - MODIFIED IFCC METHOD
+ SGOT - IFCC* WITHOUT PYRIDOXAL PHOSPHATE ACTIVATION
+ SGPT - IFCC* WITHOUT PYRIDOXAL PHOSPHATE ACTIVATION
+ PROT - BIURET METHOD
+ SALB - ALBUMIN BCG¹METHOD (COLORIMETRIC ASSAY ENDPOINT)
+ A/GR - DERIVED FROM SERUM ALBUMIN AND PROTEIN VALUES
+ SEGB - DERIVED FROM SERUM ALBUMIN AND PROTEIN VALUES
+ Sample Collected on (SCT)         : 26 Aug 2019 18:00
+ Sample Received on (SRT)          : 27 Aug 2019 22:53
+ Report Released on (RRT)          : 28 Aug 2019 02:10
+ Sample Type                       : SERUM
+ Labcode                           : 2708040550/A6750       Dr.Prachi Sinkar MD(Path)     Dr.Caesar Sengupta MD(Micro)
+ Barcode                           : N7212022                                                 Page : 4 of 9
+
+
+PROCESSED AT :
+Thyrocare
+D-37/1,TTC MIDC,Turbhe,
+Navi Mumbai-400 703
+NAME               : MR SRIKANTH (38Y/M)                                    SAMPLE COLLECTED AT :
+REF. BY            : SELF                                                    (5311169953),PRABHU CLINICAL
+                                                                             LABORATORY,DR.YEKKALA RAMAKRISHNA HOSPITAL
+TEST ASKED         : AAROGYAM B                                              RAMARAOPETA NARSIPATNAM 531116,531116
+ TEST NAME                                              TECHNOLOGY                  VALUE          UNITS        NORMAL RANGE
+ TOTAL CHOLESTEROL                                      PHOTOMETRY                 220            mg/dl         125-200
+ HDL CHOLESTEROL - DIRECT                               PHOTOMETRY                 36             mg/dl         35-80
+ LDL CHOLESTEROL - DIRECT                               PHOTOMETRY                 167            mg/dl         85-130
+ TRIGLYCERIDES                                          PHOTOMETRY                 188            mg/dl         25-200
+ TC/ HDL CHOLESTEROL RATIO                              CALCULATED                 6.1            Ratio         3-5
+ LDL / HDL RATIO                                        CALCULATED                 4.7            Ratio         1.5-3.5
+ VLDL CHOLESTEROL                                       CALCULATED                 37.6           mg/dl         5 - 40
+ NON-HDL CHOLESTEROL                                    CALCULATED                 184.1          mg/dl         < 160
+ Please correlate with clinical conditions.
+ Method :
+ CHOL - CHOD POD METHOD
+ HCHO - ENZYME SELECTIVE PROTECTION METHOD
+ LDL - HOMOGENOUS ENZYMATIC COLORIMETRIC ASSAY
+ TRIG - ENZYMATIC COLORIMETRIC METHOD (GPO) [HIGHLY INFLUENCED BY LEVEL OF FASTING]
+ TC/H - DERIVED FROM SERUM CHOLESTEROL AND HDL VALUES
+ LDL/ - DERIVED FROM SERUM HDL AND LDL VALUES
+ VLDL - DERIVED FROM SERUM TRIGLYCERIDE VALUES
+ NHDL - DERIVED FROM SERUM CHOLESTEROL AND HDL VALUES
+ *REFERENCE RANGES AS PER NCEP ATP III GUIDELINES:
+ TOTAL CHOLESTEROL             (mg/dl)    HDL         (mg/dl)  LDL                     (mg/dl)    TRIGLYCERIDES           (mg/dl)
+ DESIRABLE                     <200       LOW         <40      OPTIMAL                 <100       NORMAL                  <150
+ BORDERLINE HIGH               200-239    HIGH        >60      NEAR OPTIMAL            100-129    BORDERLINE HIGH         150-199
+ HIGH                          >240                            BORDERLINE HIGH         130-159    HIGH                    200-499
+                                                               HIGH                    160-189    VERY HIGH               >500
+                                                               VERY HIGH               >190
+ Alert !!! 10-12 hours fasting is mandatory for lipid parameters. If not, values might fluctuate.
+ Sample Collected on (SCT)             : 26 Aug 2019 18:00
+ Sample Received on (SRT)              : 27 Aug 2019 22:53
+ Report Released on (RRT)              : 28 Aug 2019 02:10
+ Sample Type                           : SERUM
+ Labcode                               : 2708040550/A6750             Dr.Prachi Sinkar MD(Path)        Dr.Caesar Sengupta MD(Micro)
+ Barcode                               : N7212022                                                           Page : 5 of 9
+
+
+PROCESSED AT :
+Thyrocare
+D-37/1,TTC MIDC,Turbhe,
+Navi Mumbai-400 703
+NAME              : MR SRIKANTH (38Y/M)                        SAMPLE COLLECTED AT        :
+                                                               (5311169953),PRABHU CLINICAL
+REF. BY           : SELF
+                                                               LABORATORY,DR.YEKKALA RAMAKRISHNA HOSPITAL
+TEST ASKED        : AAROGYAM B                                 RAMARAOPETA NARSIPATNAM 531116,531116
+TEST NAME                                     TECHNOLOGY    VALUE          UNITS REFERENCE RANGE
+ TOTAL TRIIODOTHYRONINE (T3)                  C.L.I.A       99            ng/dl   60-200
+ TOTAL THYROXINE (T4)                         C.L.I.A       6.4           µg/dl   4.5-12
+ THYROID STIMULATING HORMONE (TSH)            C.L.I.A       3.42          µIU/ml 0.3-5.5
+ Comments :    SUGGESTING THYRONORMALCY
+ Please correlate with clinical conditions.
+ Method :
+ T3 - COMPETITIVE CHEMI LUMINESCENT IMMUNO ASSAY
+ T4 - COMPETITIVE CHEMI LUMINESCENT IMMUNO ASSAY
+ TSH - SANDWICH CHEMI LUMINESCENT IMMUNO ASSAY
+ Sample Collected on (SCT)         : 26 Aug 2019 18:00
+ Sample Received on (SRT)          : 27 Aug 2019 22:53
+ Report Released on (RRT)          : 28 Aug 2019 02:10
+ Sample Type                       : SERUM
+                                                        Dr.Prachi Sinkar MD(Path)      Dr.Caesar Sengupta MD(Micro)
+ Labcode                           : 2708040550/A6750
+                                                                                            Page : 6 of 9
+ Barcode                           : N7212022
+
+
+PROCESSED AT :
+Thyrocare
+D-37/1,TTC MIDC,Turbhe,
+Navi Mumbai-400 703
+NAME            : MR SRIKANTH (38Y/M)                             SAMPLE COLLECTED AT :
+REF. BY         : SELF                                            (5311169953),PRABHU CLINICAL
+                                                                  LABORATORY,DR.YEKKALA RAMAKRISHNA HOSPITAL
+TEST ASKED      : AAROGYAM B                                      RAMARAOPETA NARSIPATNAM 531116,531116
+ TEST NAME                                        TECHNOLOGY             VALUE         UNITS      NORMAL RANGE
+ BLOOD UREA NITROGEN (BUN)                        PHOTOMETRY            12.26         mg/dl       7 - 25
+ CREATININE - SERUM                               PHOTOMETRY            0.74          mg/dl       0.6-1.1
+ BUN / SR.CREATININE RATIO                        CALCULATED            16.57         Ratio       9:1-23:1
+ CALCIUM                                          PHOTOMETRY            9.16          mg/dl       8.8-10.6
+ URIC ACID                                        PHOTOMETRY            3.3           mg/dl       4.2 - 7.3
+ Please correlate with clinical conditions.
+ Method :
+ BUN - KINETIC UV ASSAY.
+ SCRE - CREATININE ENZYMATIC METHOD
+ B/CR - DERIVED FROM SERUM BUN AND CREATININE VALUES
+ CALC - ARSENAZO III METHOD, END POINT.
+ URIC - URICASE / PEROXIDASE METHOD
+ Sample Collected on (SCT)         : 26 Aug 2019 18:00
+ Sample Received on (SRT)          : 27 Aug 2019 22:53
+ Report Released on (RRT)          : 28 Aug 2019 02:10
+ Sample Type                       : SERUM
+ Labcode                           : 2708040550/A6750       Dr.Prachi Sinkar MD(Path)     Dr.Caesar Sengupta MD(Micro)
+ Barcode                           : N7212022                                                 Page : 7 of 9
+
+
+PROCESSED AT :
+Thyrocare
+D-37/1,TTC MIDC,Turbhe,
+Navi Mumbai-400 703
+NAME                   : MR SRIKANTH (38Y/M)                                        SAMPLE COLLECTED AT :
+                                                                                    (5311169953),PRABHU CLINICAL
+REF. BY                : SELF
+                                                                                    LABORATORY,DR.YEKKALA RAMAKRISHNA
+TEST ASKED             : AAROGYAM B                                                 HOSPITAL RAMARAOPETA NARSIPATNAM
+                                                                                    531116,531116
+TEST NAME                                                              TECHNOLOGY                         VALUE         UNITS
+EST. GLOMERULAR FILTRATION RATE (eGFR)                                 CALCULATED                         117          mL/min/1.73 m2
+Reference Range :-
+> = 90           : Normal
+60 - 89 : Mild Decrease
+45 - 59          : Mild to Moderate Decrease
+30 - 44 : Moderate to Severe Decrease
+15 - 29 : Severe Decrease
+Clinical Significance
+The normal serum creatinine reference interval does not necessarily reflect a normal GFR for a patient. Because mild
+and moderate kidney injury is poorly inferred from serum creatinine alone. Thus, it is recommended for clinical
+laboratories to routinely estimate glomerular filtration rate (eGFR), a “gold standard” measurement for assessment of
+renal function, and report the value when serum creatinine is measured for patients 18 and older, when appropriate
+and feasible. It cannot be measured easily in clinical practice, instead, GFR is estimated from equations using serum
+creatinine, age, race and sex. This provides easy to interpret information for the doctor and patient on the degree of
+renal impairment since it approximately equates to the percentage of kidney function remaining. Application of
+CKD-EPI equation together with the other diagnostic tools in renal medicine will further improve the detection and
+management of patients with CKD.
+Reference
+Levey AS, Stevens LA, Schmid CH, Zhang YL, Castro AF, 3rd, Feldman HI, et al. A new equation to estimate glomerular
+filtration rate. Ann Intern Med. 2009;150(9):604-12.
+Please correlate with clinical conditions.
+Method:-       CKD-EPI Creatinine Equation
+                                                       ~~ End of report ~~
+Sample Collected on (SCT)                 : 26 Aug 2019 18:00
+Sample Received on (SRT)                  : 27 Aug 2019 22:53
+Report Released on (RRT)                  : 28 Aug 2019 02:10
+Sample Type                               : SERUM                     Dr.Prachi Sinkar MD(Path)            Dr.Caesar Sengupta MD(Micro)
+Labcode                                   : 2708040550/A6750
+                                                                                                                  Page : 8 of 9
+Barcode                                   : N7212022
+
+
+                                          CONDITIONS OF REPORTING
+v The reported results are for information and interpretation of the referring doctor only.
+v It is presumed that the tests performed on the specimen belong to the patient; named or identified.
+v Results of tests may vary from laboratory to laboratory and also in some parameters from time to time for the
+   same patient.
+v  Should the results indicate an unexpected abnormality, the same should be reconfirmed.
+v  Only such medical professionals who understand reporting units, reference ranges and limitations of
+   technologies should interpret results.
+v  This report is not valid for medico-legal purpose.
+v  Neither Thyrocare, nor its employees/representatives assume any liability, responsibility for any loss or
+   damage that may be incurred by any person as a result of presuming the meaning or contents of the report.
+                                                   EXPLANATIONS
+v Majority of the specimen processed in the laboratory are collected by Pathologists and Hospitals we call them
+   as "Clients".
+v  Name - The name is as declared by the client and recored by the personnel who collected the specimen.
+v  Ref.Dr - The name of the doctor who has recommended testing as declared by the client.
+v  Labcode - This is the accession number in our laboratory and it helps us in archiving and retrieving the data.
+v  Barcode - This is the specimen identity number and it states that the results are for the specimen bearing
+   the barcode (irrespective of the name).
+v SCP - Specimen Collection Point - This is the location where the blood or specimen was collected as declared by
+   the client.
+v  SCT - Specimen Collection Time - The time when specimen was collected as declared by the client.
+v  SRT - Specimen Receiving Time - This time when the specimen reached our laboratory.
+v  RRT - Report Releasing Time - The time when our pathologist has released the values for Reporting.
+v  Reference Range - Means the range of values in which 95% of the normal population would fall.
+                                                   SUGGESTIONS
+v   Values out of reference range requires reconfirmation before starting any medical treatment.
+v   Retesting is needed if you suspect any quality shortcomings.
+v   Testing or retesting should be done in accredited laboratories.
+v   For suggestions, complaints or feedback, write to us at info@thyrocare.com or call us on
+    022-3090 0000 / 4125 2525
+v   SMS:<Labcode No.> to 9870666333
+                                                                                                 Page : 9 of 9
